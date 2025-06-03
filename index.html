@@ -63,10 +63,12 @@
         </header>
 
         <section class="hero">
-
-            <img class="desktop" src="images/Hero_Desktop.webp">
-            <img class="mobile" src="images/Hero_Mobile.webp">
-            <img class="tablet" src="images/Hero_Tablet.webp">
+            <picture>
+                <source srcset="images/Hero_Desktop.webp" media="(min-width: 961px)" sizes="100vw" type="image/webp">
+                <source srcset="images/Hero_Tablet.webp" media="(min-width: 577px) and (max-width: 960px)" sizes="100vw" type="image/webp">
+                <source srcset="images/Hero_Mobile.webp" media="(max-width: 576px)" sizes="100vw" type="image/webp">
+                <img src="images/Hero_Desktop.webp" class="hero-img" alt="Person wearing VR headset in a futuristic digital environment">
+            </picture>
 
 
             <div class="hero-content">
